@@ -1,22 +1,39 @@
 class MyHashSet {
 public:
-    vector<int>hashSet;
+    vector<list<int>>vec;
     int size;
+
     MyHashSet() {
-        size = 1e6+1;
-        hashSet.resize(size);
+      size = 100;
+      vec.resize(size);    
+    }
+
+    //a function that returns the index of the key
+    int hash(int key){
+      return key%size;
+    }
+
+    list<int>::iterator search(int key){
+      int idx = hash(key);
+      return find(vec[idx].begin(), vec[idx].end(), key);
     }
     
     void add(int key) {
-        hashSet[key] = 1;
+      if(contains(key)) return;
+        int idx = hash(key);
+        vec[idx].push_back(key);
     }
     
     void remove(int key) {
-        hashSet[key] = 0;
+        int idx = hash(key);
+        if(contains(key) == false) return;
+        vec[idx].erase(search(key));
     }
     
     bool contains(int key) {
-        return hashSet[key];
+        int idx = hash(key);
+        if(search(key) != vec[idx].end()) return true;
+        return false;
     }
 };
 
