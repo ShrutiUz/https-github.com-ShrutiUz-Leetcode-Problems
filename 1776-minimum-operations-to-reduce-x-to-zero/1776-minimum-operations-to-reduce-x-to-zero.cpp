@@ -1,12 +1,16 @@
 class Solution {
 public:
     int minOperations(vector<int>& nums, int x) {
-        int n = nums.size();
+
+        int numsSize = nums.size();
+
         unordered_map<int,int>mp;
-        int sum = 0;
+
         mp[0] = -1;
 
-        for(int i =0; i<n; i++){
+        int sum = 0;
+
+        for(int i=0; i<numsSize; i++){
             sum += nums[i];
             mp[sum] = i;
         }
@@ -14,10 +18,10 @@ public:
         if(x>sum) return -1;
 
         int target = sum - x;
-        sum = 0;
         int maxLen = INT_MIN;
+        sum = 0;
 
-        for(int i=0; i<n; i++){
+        for(int i=0; i<numsSize; i++){
             sum += nums[i];
 
             int currSum = sum - target;
@@ -28,6 +32,7 @@ public:
             }
         }
 
-        return maxLen == INT_MIN?  -1 :  n- maxLen;
+        return maxLen == INT_MIN ? -1 :numsSize - maxLen;
+
     }
 };
