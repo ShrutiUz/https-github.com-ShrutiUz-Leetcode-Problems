@@ -1,33 +1,45 @@
 class Solution {
 public:
     int minimumEffortPath(vector<vector<int>>& heights) {
-        int rows = heights.size(), cols = heights[0].size();
-        vector<vector<int>> dist(rows, vector<int>(cols, INT_MAX));
-        priority_queue<tuple<int, int, int>, vector<tuple<int, int, int>>, greater<>> minHeap;
-        minHeap.emplace(0, 0, 0);
+        int n = heights.size();
+        int m = heights[0].size();
+
+        vector<vector<int>>dist(n, vector<int>(m, 1e9));
+
+        priority_queue< pair<int,pair<int,int>>, 
+        vector<pair<int, pair<int,int>>>, 
+        greater<pair<int, pair<int,int>>>>pq;
+
         dist[0][0] = 0;
-        
-        int directions[4][2] = {{0, 1}, {0, -1}, {1, 0}, {-1, 0}};
-        
-        while (!minHeap.empty()) {
-            auto [effort, x, y] = minHeap.top();
-            minHeap.pop();
-            
-            if (effort > dist[x][y]) continue;
-            
-            if (x == rows - 1 && y == cols - 1) return effort;
-            
-            for (auto& dir : directions) {
-                int nx = x + dir[0], ny = y + dir[1];
-                if (nx >= 0 && nx < rows && ny >= 0 && ny < cols) {
-                    int new_effort = max(effort, abs(heights[x][y] - heights[nx][ny]));
-                    if (new_effort < dist[nx][ny]) {
-                        dist[nx][ny] = new_effort;
-                        minHeap.emplace(new_effort, nx, ny);
+        pq.push({0, {0,0}});
+
+        int row[4] = {-1, 0, 1, 0};
+        int col[4] = {0, -1, 0, 1};
+
+        while(!pq.empty()){
+            auto it = pq.top();
+            pq.pop();
+
+            int diff = it.first;
+            int r = it.second.first;
+            int c = it.second.second;
+
+            if(r == n-1 && c == m-1) return diff;
+
+            for(int i=0; i<4; i++){
+                int nrow = r + row[i];
+                int ncol = c + col[i];
+
+                if(nrow>=0 && nrow<n && ncol>=0 && ncol<m){
+                    int newEffort = max(diff, abs(heights[r][c] - heights[nrow][ncol]));
+                    if(newEffort<dist[nrow][ncol]){
+                        dist[nrow][ncol] = newEffort;
+                        pq.push({newEffort, {nrow,ncol}});
                     }
                 }
             }
         }
-        return -1;
+        return 0;
+
     }
 };
