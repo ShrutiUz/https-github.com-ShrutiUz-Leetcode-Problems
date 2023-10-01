@@ -31,6 +31,7 @@ public:
             }
         }
 
+        //we are again comparing the maxCount and res because assume for this case, ((), the loop will go out of bound and we wont be able to update maxCount, therefore we return the maximum of res and maxCount
         return max(maxCount, res);
     }
 };
