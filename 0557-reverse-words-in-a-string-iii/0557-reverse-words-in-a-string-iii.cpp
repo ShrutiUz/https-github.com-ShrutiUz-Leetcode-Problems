@@ -24,7 +24,7 @@ public:
 
         for(int i=0; i<n; i++){
             if(s[i] == ' ' || i==n-1){
-                
+
                 if(i==n-1){
                     next = i;
                 }
@@ -32,7 +32,9 @@ public:
                     next = i-1;
                 }
                 
-                revStr(s, prev, next);
+                // revStr(s, prev, next);
+                reverse(s.begin()+prev, s.begin()+next+1);
+
                 prev = i+1;
             }
         }
