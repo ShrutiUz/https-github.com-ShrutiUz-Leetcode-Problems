@@ -31,7 +31,6 @@ public:
             }
         }
 
-        maxCount = max(maxCount, res);
-        return maxCount;
+        return max(maxCount, res);
     }
 };
