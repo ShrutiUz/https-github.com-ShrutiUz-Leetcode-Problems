@@ -1,35 +1,37 @@
 class Solution {
 public:
     int longestValidParentheses(string s) {
-        //two stack approach
-        //stack 1 - stores the opening bracket
-        //stack 2 - stores the problematic indices
 
-        stack<char>ch;
         stack<int>st;
-
-        st.push(-1);
-        int n  = s.size();
-
-        int maxLen = INT_MIN;
+        int n = s.size();
 
         for(int i=0; i<n; i++){
             if(s[i] == '('){
-                ch.push('(');
                 st.push(i);
             }
             else{
-                if(ch.size() != 0 && ch.top() == '('){
-                    ch.pop();
+                if(st.size()){
+                    s[st.top()] = '*';
+                    s[i] = '*';
                     st.pop();
-                    maxLen = max(maxLen, i-st.top());
-                }
-                else{
-                    st.push(i);
                 }
             }
         }
 
-        return maxLen == INT_MIN ? 0 : maxLen;
+        int maxCount = 0;
+        int res = 0;
+
+        for(int i=0; i<n; i++){
+            if(s[i] == '*'){
+                res++;
+            }
+            else{
+                maxCount = max(maxCount, res);
+                res = 0; 
+            }
+        }
+
+        maxCount = max(maxCount, res);
+        return maxCount;
     }
 };
