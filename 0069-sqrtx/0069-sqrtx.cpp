@@ -1,21 +1,25 @@
 class Solution {
 public:
     int mySqrt(int x) {
-        if(x<=1) return x;
+        if(x==0) return 0;
 
-        long long ans = 1;
+        int left = 1;
+        int right = INT_MAX;
 
-        while(ans*ans<=x){
-            
-            ans += 1;
+        while(1){
+            int mid = left + (right-left)/2;
 
-            if(ans*ans > x){
-                ans -= 1;
-                break;
+            if(mid > x/mid){
+                right = mid-1;
+            }
+            else if((mid+1) > x/(mid+1) ){
+                return mid;
+            }
+            else{
+                left = mid+1;
             }
         }
 
-        return ans;
 
     }
 };
