@@ -1,11 +1,24 @@
 class Solution {
 public:
     string truncateSentence(string s, int k) {
-        for(int i=0; i<s.size(); i++){
-            if(s[i] == ' ' && --k==0){
-                return s.substr(0, i);
+        string ans = "";
+
+        int i = 0, count = 0;
+
+        while(i<s.size() && count<k){
+            if(s[i] == ' '){
+                count++;
+                if(count == k){
+                    return ans;
+                }
+                ans += ' ';
             }
+            else{
+                ans += s[i];
+            }
+            i++;
         }
-        return s;
+        return ans;
     }
+
 };
