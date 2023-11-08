@@ -1,44 +1,55 @@
 class Solution {
 public:
-    vector<bool> checkArithmeticSubarrays(vector<int>& nums, vector<int>& l, vector<int>& r) {
 
-        int n = nums.size();
-        int m = l.size();
+    bool check(vector<int>&arr){
+        //find the min and max element
+
+        int siz = arr.size();
+        int minn = INT_MAX;
+        int maxx = INT_MIN;
+        unordered_set<int>st;
+
+        for(int num : arr){
+            minn = min(minn, num);
+            maxx = max(maxx, num);
+            st.insert(num);
+        }
+
+        if((maxx-minn)%(siz-1) != 0){
+            return false;
+        }
+
+        int diff = (maxx - minn)/(siz-1);
+
+        int curr = minn + diff;
+
+        while(curr<maxx){
+            if(st.find(curr) == st.end()){
+                return false;
+            }
+            curr += diff;
+        }
+
+        return true;
+
+    }
+
+    vector<bool> checkArithmeticSubarrays(vector<int>& nums, vector<int>& l, vector<int>& r) {
+        //leaving this for now
+        //do it by the evening shruti
+        //use the AP formula
+        //and the approach to divide the array in subarrays from the brute force approach
+
         vector<bool>ans;
+
+        int m = l.size();
 
         for(int i=0; i<m; i++){
 
-            int low = l[i];
-            int high = r[i];
-            // cout<<"low is "<<low<<" and high is "<<high<<endl;
-
-            int siz = high-low+1;
-            // cout<<"the size of the range is "<<siz<<endl;
-            // 'siz' is the number of elements that comes in this range
-
-            vector<int>range;
-
-            for(int j=low; j<=high; j++){
-                range.push_back(nums[j]);
-                // cout<<"Pushing the element "<<nums[j]<<" in the temp vector"<<endl;
-            }
-
-            sort(range.begin(), range.end());
-            
-            // cout<<"after sorting ->"<<endl;
-            // for(int it = 0; it<siz; it++){
-            //     cout<<range[it]<<" ";
-            // }
-            // cout<<endl;
-            int it;
-            for( it = 2; it<range.size(); it++){
-                if(range[it] - range[it-1] != range[1] - range[0]){
-                    break;
-                }
-            }
-            ans.push_back( it == range.size());
-            
+            vector<int>arr(nums.begin()+l[i], nums.begin()+r[i]+1);
+            ans.push_back(check(arr));
         }
+
         return ans;
     }
 };
