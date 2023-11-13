@@ -11,24 +11,15 @@
 class Solution {
 public:
     ListNode* middleNode(ListNode* head) {
-        //odd number of nodes -> one node in the middle
-        //even number of nodes -> two nodes, return the second one
-
         ListNode* slow = head;
         ListNode* fast = head;
-
-        //odd -> fast->next becomes NULL
-        //even-> fast->next->next becomes NULL
-
-        while(fast->next!=NULL && fast->next->next!=NULL){
+        if(head == NULL || head->next == NULL)
+        return head;
+        while(fast!=NULL && fast->next!= NULL){
             slow = slow->next;
-            fast = fast->next->next;
+            fast = fast->next->next; 
         }
 
-        if(fast->next==NULL){
-            return slow;
-        }
-
-        return slow->next;
+        return slow;
     }
 };
