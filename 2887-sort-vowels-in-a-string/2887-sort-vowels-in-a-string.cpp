@@ -45,3 +45,9 @@ public:
         return t;
     }
 };
+
+//time complexity ->
+//  2 times loop -> O(N)
+//  sorting the vector -> O(NlogN)
+//  reverseting the vector -> O(N)
+//  overall O(NlogN)
