@@ -20,6 +20,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0330-patching-array](https://github.com/ShrutiUz/https-github.com-ShrutiUz-Leetcode-Problems/tree/master/0330-patching-array) |
 | [0409-longest-palindrome](https://github.com/ShrutiUz/https-github.com-ShrutiUz-Leetcode-Problems/tree/master/0409-longest-palindrome) |
 | [0502-ipo](https://github.com/ShrutiUz/https-github.com-ShrutiUz-Leetcode-Problems/tree/master/0502-ipo) |
+| [0853-most-profit-assigning-work](https://github.com/ShrutiUz/https-github.com-ShrutiUz-Leetcode-Problems/tree/master/0853-most-profit-assigning-work) |
 | [0982-minimum-increment-to-make-array-unique](https://github.com/ShrutiUz/https-github.com-ShrutiUz-Leetcode-Problems/tree/master/0982-minimum-increment-to-make-array-unique) |
 # Array
 |  |
@@ -28,6 +29,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0330-patching-array](https://github.com/ShrutiUz/https-github.com-ShrutiUz-Leetcode-Problems/tree/master/0330-patching-array) |
 | [0502-ipo](https://github.com/ShrutiUz/https-github.com-ShrutiUz-Leetcode-Problems/tree/master/0502-ipo) |
 | [0648-replace-words](https://github.com/ShrutiUz/https-github.com-ShrutiUz-Leetcode-Problems/tree/master/0648-replace-words) |
+| [0853-most-profit-assigning-work](https://github.com/ShrutiUz/https-github.com-ShrutiUz-Leetcode-Problems/tree/master/0853-most-profit-assigning-work) |
 | [0982-minimum-increment-to-make-array-unique](https://github.com/ShrutiUz/https-github.com-ShrutiUz-Leetcode-Problems/tree/master/0982-minimum-increment-to-make-array-unique) |
 | [1044-find-common-characters](https://github.com/ShrutiUz/https-github.com-ShrutiUz-Leetcode-Problems/tree/master/1044-find-common-characters) |
 | [1137-height-checker](https://github.com/ShrutiUz/https-github.com-ShrutiUz-Leetcode-Problems/tree/master/1137-height-checker) |
@@ -40,6 +42,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0075-sort-colors](https://github.com/ShrutiUz/https-github.com-ShrutiUz-Leetcode-Problems/tree/master/0075-sort-colors) |
 | [0502-ipo](https://github.com/ShrutiUz/https-github.com-ShrutiUz-Leetcode-Problems/tree/master/0502-ipo) |
+| [0853-most-profit-assigning-work](https://github.com/ShrutiUz/https-github.com-ShrutiUz-Leetcode-Problems/tree/master/0853-most-profit-assigning-work) |
 | [0982-minimum-increment-to-make-array-unique](https://github.com/ShrutiUz/https-github.com-ShrutiUz-Leetcode-Problems/tree/master/0982-minimum-increment-to-make-array-unique) |
 | [1137-height-checker](https://github.com/ShrutiUz/https-github.com-ShrutiUz-Leetcode-Problems/tree/master/1137-height-checker) |
 # Counting Sort
@@ -51,7 +54,12 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0075-sort-colors](https://github.com/ShrutiUz/https-github.com-ShrutiUz-Leetcode-Problems/tree/master/0075-sort-colors) |
+| [0853-most-profit-assigning-work](https://github.com/ShrutiUz/https-github.com-ShrutiUz-Leetcode-Problems/tree/master/0853-most-profit-assigning-work) |
 # Heap (Priority Queue)
 |  |
 | ------- |
 | [0502-ipo](https://github.com/ShrutiUz/https-github.com-ShrutiUz-Leetcode-Problems/tree/master/0502-ipo) |
+# Binary Search
+|  |
+| ------- |
+| [0853-most-profit-assigning-work](https://github.com/ShrutiUz/https-github.com-ShrutiUz-Leetcode-Problems/tree/master/0853-most-profit-assigning-work) |
