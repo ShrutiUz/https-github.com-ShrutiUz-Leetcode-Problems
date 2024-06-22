@@ -8,6 +8,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0409-longest-palindrome](https://github.com/ShrutiUz/https-github.com-ShrutiUz-Leetcode-Problems/tree/master/0409-longest-palindrome) |
 | [0648-replace-words](https://github.com/ShrutiUz/https-github.com-ShrutiUz-Leetcode-Problems/tree/master/0648-replace-words) |
 | [1044-find-common-characters](https://github.com/ShrutiUz/https-github.com-ShrutiUz-Leetcode-Problems/tree/master/1044-find-common-characters) |
+| [1370-count-number-of-nice-subarrays](https://github.com/ShrutiUz/https-github.com-ShrutiUz-Leetcode-Problems/tree/master/1370-count-number-of-nice-subarrays) |
 # String
 |  |
 | ------- |
@@ -34,6 +35,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1044-find-common-characters](https://github.com/ShrutiUz/https-github.com-ShrutiUz-Leetcode-Problems/tree/master/1044-find-common-characters) |
 | [1137-height-checker](https://github.com/ShrutiUz/https-github.com-ShrutiUz-Leetcode-Problems/tree/master/1137-height-checker) |
 | [1138-grumpy-bookstore-owner](https://github.com/ShrutiUz/https-github.com-ShrutiUz-Leetcode-Problems/tree/master/1138-grumpy-bookstore-owner) |
+| [1370-count-number-of-nice-subarrays](https://github.com/ShrutiUz/https-github.com-ShrutiUz-Leetcode-Problems/tree/master/1370-count-number-of-nice-subarrays) |
 | [1605-minimum-number-of-days-to-make-m-bouquets](https://github.com/ShrutiUz/https-github.com-ShrutiUz-Leetcode-Problems/tree/master/1605-minimum-number-of-days-to-make-m-bouquets) |
 | [1675-magnetic-force-between-two-balls](https://github.com/ShrutiUz/https-github.com-ShrutiUz-Leetcode-Problems/tree/master/1675-magnetic-force-between-two-balls) |
 # Trie
@@ -73,3 +75,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [1138-grumpy-bookstore-owner](https://github.com/ShrutiUz/https-github.com-ShrutiUz-Leetcode-Problems/tree/master/1138-grumpy-bookstore-owner) |
+| [1370-count-number-of-nice-subarrays](https://github.com/ShrutiUz/https-github.com-ShrutiUz-Leetcode-Problems/tree/master/1370-count-number-of-nice-subarrays) |
+# Math
+|  |
+| ------- |
+| [1370-count-number-of-nice-subarrays](https://github.com/ShrutiUz/https-github.com-ShrutiUz-Leetcode-Problems/tree/master/1370-count-number-of-nice-subarrays) |
