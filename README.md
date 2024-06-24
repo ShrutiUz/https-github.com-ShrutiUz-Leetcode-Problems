@@ -32,6 +32,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0648-replace-words](https://github.com/ShrutiUz/https-github.com-ShrutiUz-Leetcode-Problems/tree/master/0648-replace-words) |
 | [0853-most-profit-assigning-work](https://github.com/ShrutiUz/https-github.com-ShrutiUz-Leetcode-Problems/tree/master/0853-most-profit-assigning-work) |
 | [0982-minimum-increment-to-make-array-unique](https://github.com/ShrutiUz/https-github.com-ShrutiUz-Leetcode-Problems/tree/master/0982-minimum-increment-to-make-array-unique) |
+| [1037-minimum-number-of-k-consecutive-bit-flips](https://github.com/ShrutiUz/https-github.com-ShrutiUz-Leetcode-Problems/tree/master/1037-minimum-number-of-k-consecutive-bit-flips) |
 | [1044-find-common-characters](https://github.com/ShrutiUz/https-github.com-ShrutiUz-Leetcode-Problems/tree/master/1044-find-common-characters) |
 | [1137-height-checker](https://github.com/ShrutiUz/https-github.com-ShrutiUz-Leetcode-Problems/tree/master/1137-height-checker) |
 | [1138-grumpy-bookstore-owner](https://github.com/ShrutiUz/https-github.com-ShrutiUz-Leetcode-Problems/tree/master/1138-grumpy-bookstore-owner) |
@@ -74,9 +75,22 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 # Sliding Window
 |  |
 | ------- |
+| [1037-minimum-number-of-k-consecutive-bit-flips](https://github.com/ShrutiUz/https-github.com-ShrutiUz-Leetcode-Problems/tree/master/1037-minimum-number-of-k-consecutive-bit-flips) |
 | [1138-grumpy-bookstore-owner](https://github.com/ShrutiUz/https-github.com-ShrutiUz-Leetcode-Problems/tree/master/1138-grumpy-bookstore-owner) |
 | [1370-count-number-of-nice-subarrays](https://github.com/ShrutiUz/https-github.com-ShrutiUz-Leetcode-Problems/tree/master/1370-count-number-of-nice-subarrays) |
 # Math
 |  |
 | ------- |
 | [1370-count-number-of-nice-subarrays](https://github.com/ShrutiUz/https-github.com-ShrutiUz-Leetcode-Problems/tree/master/1370-count-number-of-nice-subarrays) |
+# Bit Manipulation
+|  |
+| ------- |
+| [1037-minimum-number-of-k-consecutive-bit-flips](https://github.com/ShrutiUz/https-github.com-ShrutiUz-Leetcode-Problems/tree/master/1037-minimum-number-of-k-consecutive-bit-flips) |
+# Queue
+|  |
+| ------- |
+| [1037-minimum-number-of-k-consecutive-bit-flips](https://github.com/ShrutiUz/https-github.com-ShrutiUz-Leetcode-Problems/tree/master/1037-minimum-number-of-k-consecutive-bit-flips) |
+# Prefix Sum
+|  |
+| ------- |
+| [1037-minimum-number-of-k-consecutive-bit-flips](https://github.com/ShrutiUz/https-github.com-ShrutiUz-Leetcode-Problems/tree/master/1037-minimum-number-of-k-consecutive-bit-flips) |
